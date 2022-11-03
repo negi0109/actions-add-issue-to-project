@@ -43,7 +43,7 @@ outputs:
 runs:
   using: "composite"
   steps:
-    - uses: monry/actions-get-project-id@v2
+    - uses: negi0109/actions-get-project-id@debug
       id: get-project-id
       if: inputs.project-id == ''
       with:
