@@ -51,6 +51,7 @@ runs:
         project-owner: ${{ inputs.project-owner }}
         project-number: ${{ inputs.project-number }}
     - name: Output Error
+      shell: bash
       run: echo ${{ steps.get-project-id.outputs.error }}
     - uses: monry/actions-get-issue-id@v1
       id: get-issue-id
